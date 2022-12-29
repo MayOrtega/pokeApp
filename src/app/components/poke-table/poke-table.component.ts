@@ -15,14 +15,18 @@ export class PokeTableComponent implements OnInit {
   }
 
   getPokemons(){
-    this.pokeService.getPokemons().subscribe(
-      res=> {
-        console.log(res)
-      },
-      err=>{
 
-      }
-
-    );
+    for(let i = 0; i<=150; i++){
+      this.pokeService.getPokemons(i).subscribe(
+        res=> {
+          console.log(res)
+        },
+        err=>{
+  
+        }
+  
+      );
+    }
+    
   }
 }
