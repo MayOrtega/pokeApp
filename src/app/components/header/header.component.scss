@@ -1,9 +1,27 @@
-// @import '../../../assets/styles/variables.scss'
-
+@import '../../../assets/styles/variables.scss';
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
 
 .mat-toolbar{
-    background-color: black;
+    background-color:$black;
+    
+}
+
+.mat-toolbar-title{
+    color: $white;
+    margin-left: 20%;
 }
 img:hover{
     cursor: pointer;
+}
+
+.content-flex{
+display: flex;
+flex-direction: row;
+margin-top: 2%;
+}
+
+h1{
+    margin-left: 18%;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 2em;
 }
