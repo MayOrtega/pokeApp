@@ -11,7 +11,7 @@ import { Router } from '@angular/router';
 })
 export class PokeTableComponent implements OnInit {
   //Columnas que se muestran de la tabla de angular material
-  displayedColumns: string[] = ['name','name', 'name'];
+  displayedColumns: any[] = ['position', 'image', 'name'];
   data: any[] = [];
   dataSource = new MatTableDataSource<any>(this.data);
 
@@ -32,6 +32,7 @@ export class PokeTableComponent implements OnInit {
     for (let i = 1; i <= 150; i++) {
       this.pokemonService.getPokemons(i).subscribe(
         res => {
+          console.log(res.url)
           pokemonData = {
             position: i,
             image: res.sprites.front_default,
@@ -61,7 +62,7 @@ export class PokeTableComponent implements OnInit {
 
  //Obtiene elemento seleccionado
   getRow(row:any){
-    //console.log(row);
+    console.log(row);
     this.router.navigateByUrl(`/pokeDetail/${row.position}`)
   }
 
