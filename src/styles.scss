@@ -1,12 +1,16 @@
-/* You can add global styles to this file, and also import other style files */
+@import './assets/styles/variables.scss';
 
 html, body {
     height: 100%;
+    background-image: url('https://cdn-icons-png.flaticon.com/512/1752/1752696.png');
+    background-size: 80px;
+    background-color: $black;
+ 
     
  }
 body { 
     margin: 0; 
     font-family: Roboto, "Helvetica Neue", sans-serif;
-    background-color: black;
+   
     
  }

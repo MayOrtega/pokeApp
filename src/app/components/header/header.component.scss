@@ -3,25 +3,34 @@
 
 .mat-toolbar{
     background-color:$black;
-    
+    background-image: url('https://cdn-icons-png.flaticon.com/128/189/189001.png');
+    background-repeat: no-repeat;
+    background-size: 60px;
+    background-position: 80px;
+    height: 80px;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 1.5rem;
+}
+
+.mat-toolbar:hover{
+    background-image: url('https://cdn-icons-png.flaticon.com/512/188/188972.png');
 }
 
 .mat-toolbar-title{
     color: $white;
-    margin-left: 20%;
+    margin-left: 10%;
+img{
+    margin-top: 2%;
+    padding: 1%;
+} 
+      
 }
 img:hover{
     cursor: pointer;
+    opacity: 0.5;
 }
 
-.content-flex{
-display: flex;
-flex-direction: row;
-margin-top: 2%;
+p{
+    cursor: pointer;
 }
 
-h1{
-    margin-left: 18%;
-    font-family: 'Shadows Into Light', cursive;
-    font-size: 2em;
-}

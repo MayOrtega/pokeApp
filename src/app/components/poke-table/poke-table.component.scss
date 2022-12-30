@@ -4,7 +4,7 @@
 
 .container{
     width: 80%;
-    margin-top: 20px;
+    margin-top: 25px;
     text-align: center;
     margin-left: 10%;
     font-family: 'Montserrat', sans-serif;
@@ -15,7 +15,7 @@ table {
     min-width: 80%;
     margin: auto;
     text-align: center;
-    border: solid $white 4px;
+    border: solid $yellow 4px;
     border-radius: 20px;
     font-family: 'Montserrat', sans-serif;
  
@@ -55,11 +55,18 @@ table {
 
 .mat-cell:first-letter {
     text-transform: uppercase;
+    font-size: 2em;
+}
+
+.mat-cell{
+    height: 100px;
+    text-transform: none;
+    
 }
 
 .mat-row:hover {
     cursor: pointer;
-    box-shadow: inset 0 0 0 5px $yellow;
+    box-shadow: inset 0 0 0 2px $yellow;
 }
 
 ::ng-deep.mat-paginator {
@@ -83,5 +90,22 @@ table {
 }
 
 input {
-    color: $white !important;
+    color: $blue !important;
+    
+    
+}
+
+.paginator{
+    background-color: $yellow;
+    margin-top: -4px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+
+@media (max-width: 800px) {
+    .mat-row:nth-child(2n+1) {
+        font-size: 3vw;
+        
+    }
 }
